@@ -1,0 +1,133 @@
+.body{
+    background-color: black;
+   
+
+}
+
+.container{
+     display: flex;
+    flex-direction: column ;
+    min-height: 100vh;
+    flex: 1;
+}
+
+.nav-link{
+    
+    color: black ;
+}
+
+.navbar-nav a:hover{
+    color: red;
+    transition: transform 0.3s ease; 
+    transform: scale(1.05); 
+}
+
+/* Footer */
+
+
+.f-info-links a {
+    text-decoration: none;
+    color:black;
+    margin-right: 1rem;
+
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.f-info-links,
+.f-info-social,
+.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.f-info-social i {
+    margin-right: 1.2rem;
+    font-size: 1.5 rem;;
+}
+
+.f-info-social i:hover{
+    color: blue;
+    transition: transform 0.3s ease; 
+    transform: scale(2.05); 
+
+}
+
+.f-info {
+    height: 8rem;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content:  center;
+    align-items: space-evenly;
+    text-align: center;
+}
+
+
+/* Cards */
+
+.listing-card{
+     border: none;
+     margin-bottom:2rem ;
+     
+    
+}
+
+.card-img-top{
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card-body{
+    padding: 0;
+
+}
+
+.card-text{
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.card-show{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+
+}
+.card-img-overlay:hover {
+    background-color: white;
+    opacity: 0.2;
+    transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(15, 0, 0, 0.2);
+
+}
+
+
+/* update */
+.edit-btn:hover{
+    background-color: red;
+    border: 0;
+}
+
+/* show */
+
+ .show-img{
+    height: 40vh;
+ }
+
+.btns{
+    display: flex;
+
+}
