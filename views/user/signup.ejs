@@ -1,0 +1,33 @@
+<% layout('/layouts/bolierplate.ejs') %>
+
+<body>
+    <div class="row mt-3">
+        <h3 class="col-6 offset-3 mb-3">SignUp on WonderLust!</h3>
+        <div class="col-6 offset-3">
+            <form method="post" action="/signup" class="needs-validation" novalidate>
+                <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" id="username" type="text" placeholder="Enter Username" class="form-control" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="emali" class="form-label">Email</label>
+                <input name="email" id="email" type="text" placeholder="Enter Email" class="form-control" required>
+                
+            </div>
+            <div class="mb-3 position-relative">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+            <button type="button" class="btn  position-absolute top-50 end-0 " id="togglePassword">
+                <i class="fa-solid fa-eye" id="eyeIcon"></i>
+            </button>
+            </div>
+
+            <button class="btn btn-success">SignUp</button>
+            </form>
+        </div>
+    </div>
+
+</body>

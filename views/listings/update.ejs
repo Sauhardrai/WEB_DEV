@@ -1,0 +1,58 @@
+<% layout('/layouts/bolierplate.ejs') %>
+
+<body>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+            <h1>You are editing your listing </h1>
+            <form method="POST" action="/listings/update/<%=data._id%>?_method=put" class="needs-validation" novalidate>
+                
+                <div class="mb-3">
+                    <label for="Title" class="form-label">Title</label>
+                    <input name="listings[title]" type="text" value="<%=data.title%>" class="form-control" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="Description" class="form-label"> Description</label>
+                    <textarea name="listings[description]" type="text"  class="form-control" required><%=data.description%></textarea>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Image url" class="form-label">Image</label>
+                    <input name="listings[image.url]" type="text" placeholder="Image url" class="form-control" required>
+
+                </div>
+                <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="Country" class="form-label">Country</label>
+                            <input name="listings[country]" type="text" value="<%=data.country%>" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid country.
+                            </div>
+                        </div>
+                    
+                        <div class="mb-3 col-md-8">
+                            <label for="Price" class="form-label">Price</label>
+                            <input name="listings[price]" type="number" value="<%=data.price%>" class="form-control" required>
+                            <div class="invalid-feedback">
+                            Please provide a Price.
+                            </div>
+                        </div>
+                </div>
+                <div class="mb-3">
+                    <label for="LOcation" class="form-label">location</label>
+                    <input name="listings[location]" type="text" value="<%=data.location %>" class="form-control" required>
+                    <div class="invalid-feedback">
+                    Please provide a valid city.
+                    </div>
+                </div>
+                
+
+                <button class="btn btn-dark mt-2 edit-btn">Edit!</button>
+            </form>
+        </div>
+
+    </div>
+   
+</body>
