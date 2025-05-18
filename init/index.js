@@ -17,7 +17,7 @@ main()
 
 
 async function main() {
-    await mongoose.connect('mongodb+srv://lovunaruto:H4lZJGlG8IV4pJbe@cluster0.ylfn76p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+    await mongoose.connect(process.env.SCREATE)
 }
 
 const initDB = async () => {
